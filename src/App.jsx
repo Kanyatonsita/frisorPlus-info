@@ -28,12 +28,22 @@ function MoreInfo() {
       <img className="IOS" src={IOS} alt="IOS" />
 
       <p>Ladda ner vår Android app här:</p>
-      <img className="Android" src={Android} alt="Android" />
+      <a href="https://play.google.com/store/apps/details?id=com.release.frisorplus">
+        <img className="Android" src={Android} alt="Android" />
+      </a>
 
       <p>Adress: Carl krooks gata 6, Helsingborg</p>
+      
+      <a href="mailto:frisorplus@gmail.com">
       <p>Epost: frisorplus@gmail.com</p>
+      </a>
+
       <p>Telefon: +46 737722220</p>
+
+      <a href="https://www.facebook.com/frisorplus.se">
       <img className="facebookLogo" src={facebookLogo} alt="facebookLogo" />
+      </a>
+     
     </div>
   );
 }

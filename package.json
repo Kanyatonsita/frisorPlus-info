@@ -2,7 +2,7 @@
   "name": "frisorplus-info",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://Kanyatonsita.github.io/frisorPlus-info",
+  "homepage": "https://github.com/Kanyatonsita/frisorPlus-info.git",
   "type": "module",
   "scripts": {
     "predeploy" : "npm run build",
@@ -13,7 +13,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "gh-pages": "^6.0.0",
+    "gh-pages": "^6.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },

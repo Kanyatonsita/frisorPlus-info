@@ -8,17 +8,26 @@
   /* background-color: lightslategray; */
 
   color: black;
-  background-image: url("background.png");
-  background-repeat: no-repeat;
-  background-attachment:fixed;
-  background-position: center;
-  background-size: 100% 100%;
-
+  background-image: none; /* Remove the background image from :root */
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("background2.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -1;
 }
 
 a {
@@ -74,3 +83,6 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+

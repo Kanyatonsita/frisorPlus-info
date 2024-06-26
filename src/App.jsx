@@ -10,6 +10,10 @@ import Android from './assets/Android.png';
 import './App.css'
 
 function Content() {
+  const [showServices, setShowServices] = useState(false);
+
+  const toggleServices = () => setShowServices(!showServices);
+
   return (
     <div className="content">
       <p>
@@ -17,6 +21,18 @@ function Content() {
         vår praktiska app för Android eller iOS för ett smidigt tidsbokning för ditt
         nästa klippning. Njut av en sömlös grooming-upplevelse, varje gång."
       </p>
+      <button onClick={toggleServices}>Våra tjänster</button>
+      <div className={`services-list ${showServices ? "expand" : ""}`}>
+        {showServices && (
+          <ul>
+            <li>Vuxen hår klippning</li>
+            <li>Vuxen skägg klippning</li>
+            <li>Vuxen hår + skägg klippning</li>
+            <li>Barn klippning</li>
+            <li>Pensionär klippning</li>
+          </ul>
+        )}
+      </div>
     </div>
   );
 }

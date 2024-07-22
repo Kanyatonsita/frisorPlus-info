@@ -41,7 +41,9 @@ function MoreInfo() {
   return (
     <div className="moreInfo">
       <p>Ladda ner vår IOS app här:</p>
-      <img className="IOS" src={IOS} alt="IOS" />
+      <a href="https://apps.apple.com/se/app/fris%C3%B6r-plus/id6520394016?l=en-GB">
+        <img className="IOS" src={IOS} alt="IOS" />
+      </a>
 
       <p>Ladda ner vår Android app här:</p>
       <a href="https://play.google.com/store/apps/details?id=com.release.frisorplus">

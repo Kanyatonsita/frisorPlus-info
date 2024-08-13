@@ -2,7 +2,7 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import logo from './assets/logofrisor.png';
-import img from './assets/moreinfo.png';
+import Group9 from './assets/Group9.png';
 import facebookLogo from './assets/facebookLogo.png';
 import IOS from './assets/IOS.png';
 import Android from './assets/Android.png';
@@ -40,6 +40,7 @@ function Content() {
 function MoreInfo() {
   return (
     <div className="moreInfo">
+       <p style={{ fontSize: '20px', fontWeight: 'bold' }}>drop in eller boka en tid genom att:</p>
       <p>Ladda ner vår IOS app här:</p>
       <a href="https://apps.apple.com/se/app/fris%C3%B6r-plus/id6520394016?l=en-GB">
         <img className="IOS" src={IOS} alt="IOS" />
@@ -56,7 +57,6 @@ function MoreInfo() {
       <p>Epost: frisorplus@gmail.com</p>
       </a>
 
-      <p>Telefon: +46 737722220</p>
 
       <a href="https://www.facebook.com/frisorplus.se">
       <img className="facebookLogo" src={facebookLogo} alt="facebookLogo" />
@@ -92,7 +92,7 @@ function App() {
         <MoreInfo />
         <div style={{ marginLeft: '20px', marginTop: '20px' }}>
           <Timeinfo />
-          <img className="img" src={img} alt="img" />
+          <img className="img" src={Group9} alt="Group9" />
         </div>
       </div>
     </div>
